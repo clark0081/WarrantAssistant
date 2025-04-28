@@ -1,0 +1,2092 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EDLib</name>
+    </assembly>
+    <members>
+        <member name="T:EDLib.Pricing.Option.BarrierOption">
+            <summary>
+            Used for barrier options pricing. 
+            (WARNING: Does not guarantee the correctness and efficiency! Please check the code before using it)
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutPrice(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Price of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Price of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutDelta(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Δ of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Δ of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutGamma(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Γ of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Γ of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutTheta(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Θ of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Θ of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutVega(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            ν of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>ν of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutRho(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            ρ of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>ρ of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.CallUpOutIV(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Implied volatility of up and out call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="optionPrice">Option price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Implied vloatility of up and out call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutPrice(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Price of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Price of down and out put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutDelta(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Δ of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Δ of down and out put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutGamma(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Γ of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Γ of down and out put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutTheta(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Θ of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Θ of down and out put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutVega(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            ν of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>ν of down and out put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutRho(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            ρ of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>ρ of down and out put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.BarrierOption.PutDownOutIV(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Implied volatility of down and out put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="T">Time to maturity</param>
+            <param name="H">Barrier price</param>
+            <param name="optionPrice">Option price</param>
+            <param name="n">N of trinominal tree</param>
+            <returns>Implied vloatility of down and out put option</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Option.NamespaceDoc">
+            <summary>
+            Use for options pricing
+            </summary>
+        </member>
+        <member name="T:EDLib.Pricing.Option.PlainVanilla">
+            <summary>
+            Used for plain vanilla options pricing
+            </summary>
+        </member>
+        <member name="T:EDLib.Pricing.Option.PlainVanilla.Greeks">
+            <summary>
+            Bitmask that shows type of Greeks to be calculated
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.Delta">
+            <summary>
+            Δ
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.Gamma">
+            <summary>
+            Γ
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.Theta">
+            <summary>
+            Θ
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.Vega">
+            <summary>
+            ν
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.Regular">
+            <summary>
+            Oftenly used: Δ, Γ, Θ, ν
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.Rho">
+            <summary>
+            ρ
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Option.PlainVanilla.Greeks.All">
+            <summary>
+            All 5 Greeks
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallPrice(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Price of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Price of call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutPrice(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Price of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Price of put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallDelta(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Δ of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Δ of call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutDelta(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Δ of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Δ of put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallGamma(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Γ of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Γ of call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutGamma(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Γ of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Γ of put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallTheta(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Θ of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Θ of call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutTheta(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Θ of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>Θ of put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallVega(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            ν of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>ν of call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutVega(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            ν of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>ν of put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallRho(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            ρ of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>ρ of call option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutRho(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            ρ of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">σ of spot price</param>
+            <param name="T">Time to maturity</param>
+            <returns>ρ of put option</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallGreeks(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Calculate Greeks of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">Sigma of spot price</param>
+            <param name="T">Time to maturity</param>        
+            <param name="delta">Output Δ</param>
+            <param name="gamma">Output Γ</param>
+            <param name="theta">Output Θ</param>
+            <param name="vega">Output ν</param>
+            <param name="rho">Output ρ</param>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallGreeks(System.Double,System.Double,System.Double,System.Double,System.Double,EDLib.Pricing.Option.PlainVanilla.Greeks)">
+            <summary>
+            Calculate specified Greeks of call option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">Sigma of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="bitmask">Specify which greeks to calculate</param>
+            <returns>Always returns an double array with 5 elements, having delta, gamma, theta, vega, rho, accordingly. Unspecified Greeks would be set to 0.</returns>
+            <exception cref="T:System.ArgumentException">Nothing is set in bitmask</exception>
+            <example>
+            <code>
+            double[] greeks = PlainVanilla.CallGreeks(150, 50, 0.025, 0.5, 0.56, PlainVanilla.Greeks.Delta | PlainVanilla.Greeks.Gamma | PlainVanilla.Greeks.Rho);
+            for (int i = 0; i &lt; greeks.Length; i++)
+                Console.WriteLine(greeks[i]);
+            //greeks[0]: Delta, greeks[1]: Gamma, greeks[4]: Rho, greeks[2]: 0, greeks[3]: 0
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutGreeks(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Calculate Greeks of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">Sigma of spot price</param>
+            <param name="T">Time to maturity</param>        
+            <param name="delta">Output Δ</param>
+            <param name="gamma">Output Γ</param>
+            <param name="theta">Output Θ</param>
+            <param name="vega">Output ν</param>
+            <param name="rho">Output ρ</param>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutGreeks(System.Double,System.Double,System.Double,System.Double,System.Double,EDLib.Pricing.Option.PlainVanilla.Greeks)">
+            <summary>
+            Calculate specified Greeks of put option
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>
+            <param name="sigma">Sigma of spot price</param>
+            <param name="T">Time to maturity</param>
+            <param name="bitmask">Specify which greeks to calculate</param>
+            <returns>Always returns an double array with 5 elements, having delta, gamma, theta, vega, rho, accordingly. Unspecified Greeks would be set to 0.</returns>
+            <exception cref="T:System.ArgumentException">Nothing is set in bitmask</exception>
+            <example>
+            <code>
+            double[] greeks = PlainVanilla.PutGreeks(150, 50, 0.025, 0.5, 0.56, PlainVanilla.Greeks.Regular);
+            for (int i = 0; i &lt; greeks.Length; i++)
+                Console.WriteLine(greeks[i]);
+            //greeks[0]: Delta, greeks[1]: Gamma, greeks[2]: Theta, greeks[3]: Vega, greeks[4]: 0 
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallIVBisection(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Implied volatility of call option by bisection method
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>        
+            <param name="T">Time to maturity</param>  
+            <param name="optionPrice">Option's price</param>
+            <returns>Implied volatility</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutIVBisection(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Implied volatility of put option by bisection method
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>        
+            <param name="T">Time to maturity</param>  
+            <param name="optionPrice">Option's price</param>
+            <returns>Implied volatility</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.CallIVNewton(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Implied volatility of call option by Newton method
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>        
+            <param name="T">Time to maturity</param>  
+            <param name="optionPrice">Option's price</param>
+            <returns>Implied volatility</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Option.PlainVanilla.PutIVNewton(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Implied volatility of put option by Newton method
+            </summary>
+            <param name="S">Spot price</param>
+            <param name="X">Exercise price</param>
+            <param name="r">Interest rate</param>        
+            <param name="T">Time to maturity</param>  
+            <param name="optionPrice">Option's price</param>
+            <returns>Implied volatility</returns>
+        </member>
+        <member name="T:EDLib.Pricing.NamespaceDoc">
+            <summary>
+            Tools for options and warrants pricing
+            </summary>
+        </member>
+        <member name="T:EDLib.Pricing.NormDist">
+            <summary>
+            Normal distribution
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.n(System.Double)">
+            <summary>
+            Probability density function of standard normal distribution
+            </summary>
+            <param name="z">z value</param>
+            <returns>Probability density</returns>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.n(System.Double,System.Double,System.Double)">
+            <summary>
+            Probability density function of normal distribution
+            </summary>
+            <param name="r">x value</param>
+            <param name="mu">Mean</param>
+            <param name="sigma">Standard Deviation</param>
+            <returns>Probability density</returns>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.N(System.Double)">
+            <summary>
+            Cumulative density function (Phi function)
+            </summary>
+            <param name="z">z value</param>
+            <returns>Cumulative probability</returns>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.N1(System.Double)">
+            <summary>
+            Cumulative density function (Phi function)
+            </summary>
+            <param name="z">z value</param>
+            <returns>Cumulative probability</returns>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.f(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Numerical approximation to the bivariate normal distribution, 
+            </summary>
+            <param name="x">x1 value</param>
+            <param name="y">x2 value</param>
+            <param name="aprime">a'</param>
+            <param name="bprime">b'</param>
+            <param name="rho">Correlation coefficient</param>
+            <returns>Probability density</returns>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.sgn(System.Double)">
+            <summary>
+            Sign function
+            </summary>
+            <param name="x">x</param>
+            <returns>-1 for negative number, 1 otherwise</returns>
+        </member>
+        <member name="M:EDLib.Pricing.NormDist.N(System.Double,System.Double,System.Double)">
+            <summary>
+            Cumulative density function of bivariate standard normal distribution
+            </summary>
+            <param name="a">x1 value</param>
+            <param name="b">x2 value</param>
+            <param name="rho">Correlation coefficient</param>
+            <returns>Cumulative probability</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.NamespaceDoc">
+            <summary>
+            Use for warrants pricing
+            </summary>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.WarrantType">
+            <summary>
+            Type of warrants
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.Call">
+            <summary>
+            Call
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.Put">
+            <summary>
+            Put
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.CallUpOut">
+            <summary>
+            Up and knock out call
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.PutDownOut">
+            <summary>
+            Down and knock out put
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.CallDownOut">
+            <summary>
+            Down and knock out call (aka Bull)
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.PutUpOut">
+            <summary>
+            Up and knock out put (aka Bear)
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.WarrantType.Others">
+            <summary>
+            Other unlisted warrants (Should not have any)
+            </summary>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.Warrant">
+            <summary>
+            Used for pricing warrants
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.WID">
+            <summary>
+            Warrant ID
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.issuer">
+            <summary>
+            Issuer ID of the warrant
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.traderID">
+            <summary>
+            Trader ID
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.UID">
+            <summary>
+            Underlying ID
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.X">
+            <summary>
+            Exercise price
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.T">
+            <summary>
+            Time to maturity in year
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.CR">
+            <summary>
+            Conversion ratio
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.r">
+            <summary>
+            Interest rate
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.S">
+            <summary>
+            Underlying spot price
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.Warrant.sigma_finRate">
+            <summary>
+            Sigma or Financial rate (Bull/Bear)
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.Price">
+            <summary>
+            Warrant price
+            </summary>
+            <returns>Warrant price</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.Delta">
+            <summary>
+            Warrant delta
+            </summary>
+            <returns>Warrant delta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.Gamma">
+            <summary>
+            Warrant gamma
+            </summary>
+            <returns>Warrant gamma</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.Theta">
+            <summary>
+            Warrant theta
+            </summary>
+            <returns>Warrant theta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.Vega">
+            <summary>
+            Warrant vega
+            </summary>
+            <returns>Warrant vega</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Warrant.Rho">
+            <summary>
+            Warrant rho
+            </summary>
+            <returns>Warrant rho</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.BarrierWarrant">
+            <summary>
+            Barrier warrants
+            </summary>
+        </member>
+        <member name="F:EDLib.Pricing.Warrant.BarrierWarrant.H">
+            <summary>
+            Barrier
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.BarrierWarrant.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of barrier warrant
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+            <param name="H">Barrier</param>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.Call">
+            <summary>
+            Call
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of call
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Price">
+            <summary>
+            Warrant price
+            </summary>
+            <returns>Warrant price</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Price(System.Double)">
+            <summary>
+            Update stock price and calculate warrant price
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant price</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Delta">
+            <summary>
+            Warrant delta
+            </summary>
+            <returns>Warrant delta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Delta(System.Double)">
+            <summary>
+            Update stock price and calculate warrant delta
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant delta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Gamma">
+            <summary>
+            Warrant gamma
+            </summary>
+            <returns>Warrant gamma</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Gamma(System.Double)">
+            <summary>
+            Update stock price and calculate warrant gamma
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant gamma</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Theta">
+            <summary>
+            Warrant theta
+            </summary>
+            <returns>Warrant theta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Theta(System.Double)">
+            <summary>
+            Update stock price and calculate warrant theta
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant theta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Vega">
+            <summary>
+            Warrant vega
+            </summary>
+            <returns>Warrant vega</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Vega(System.Double)">
+            <summary>
+            Update stock price and calculate warrant vega
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant vega</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Rho">
+            <summary>
+            Warrant rho
+            </summary>
+            <returns>Warrant rho</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Call.Rho(System.Double)">
+            <summary>
+            Update stock price and calculate warrant rho
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant rho</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.Put">
+            <summary>
+            Put
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of Put
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Price">
+            <summary>
+            Warrant price
+            </summary>
+            <returns>Warrant price</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Price(System.Double)">
+            <summary>
+            Update stock price and calculate warrant price
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant price</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Delta">
+            <summary>
+            Warrant delta
+            </summary>
+            <returns>Warrant delta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Delta(System.Double)">
+            <summary>
+            Update stock price and calculate warrant delta
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant delta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Gamma">
+            <summary>
+            Warrant gamma
+            </summary>
+            <returns>Warrant gamma</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Gamma(System.Double)">
+            <summary>
+            Update stock price and calculate warrant gamma
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant gamma</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Theta">
+            <summary>
+            Warrant theta
+            </summary>
+            <returns>Warrant theta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Theta(System.Double)">
+            <summary>
+            Update stock price and calculate warrant theta
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant theta</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Vega">
+            <summary>
+            Warrant vega
+            </summary>
+            <returns>Warrant vega</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Vega(System.Double)">
+            <summary>
+            Update stock price and calculate warrant vega
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant vega</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Rho">
+            <summary>
+            Warrant rho
+            </summary>
+            <returns>Warrant rho</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.Put.Rho(System.Double)">
+            <summary>
+            Update stock price and calculate warrant rho
+            </summary>
+            <param name="S">Stock price</param>
+            <returns>Warrant rho</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.CallDownOut">
+            <summary>
+            Down and knock out call (aka Bull)
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of down and knock out call
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+            <param name="H">Barrier</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.Price">
+            <summary>
+            Price of down and knock out call
+            </summary>
+            <returns>Price of down and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.Delta">
+            <summary>
+            Delta of down and knock out call
+            </summary>
+            <returns>==1</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.Gamma">
+            <summary>
+            Gamma of down and knock out call
+            </summary>
+            <returns>==0</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.Theta">
+            <summary>
+            Theta of down and knock out call
+            </summary>
+            <returns>Theta of down and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.Vega">
+            <summary>
+            Vega of down and knock out call
+            </summary>
+            <returns>==0</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallDownOut.Rho">
+            <summary>
+            Rho of down and knock out call
+            </summary>
+            <returns>NotImplementedException</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.PutUpOut">
+            <summary>
+            Up and knock out put (aka Bear)
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of down and knock out call
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+            <param name="H">Barrier</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.Price">
+            <summary>
+            Price of up and knock out put
+            </summary>
+            <returns>Price of up and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.Delta">
+            <summary>
+            Delta of up and knock out put
+            </summary>
+            <returns>== -1</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.Gamma">
+            <summary>
+            Gamma of up and knock out put
+            </summary>
+            <returns>== 0</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.Theta">
+            <summary>
+            Theta of up and knock out put
+            </summary>
+            <returns>Theta of up and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.Vega">
+            <summary>
+            Vega of up and knock out put
+            </summary>
+            <returns>== 0</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutUpOut.Rho">
+            <summary>
+            Rho of up and knock out put
+            </summary>
+            <returns>NotImplementedException</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.CallUpOut">
+            <summary>
+            Up and knock out call
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of up and knock out call
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+            <param name="H">Barrier</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.Price">
+            <summary>
+            Price of up and knock out call
+            </summary>
+            <returns>Price of up and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.Delta">
+            <summary>
+            Delta of up and knock out call
+            </summary>
+            <returns>Delta of up and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.Gamma">
+            <summary>
+            Gamma of up and knock out call
+            </summary>
+            <returns>Gamma of up and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.Theta">
+            <summary>
+            Theta of up and knock out call
+            </summary>
+            <returns>Theta of up and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.Vega">
+            <summary>
+            Vega of up and knock out call
+            </summary>
+            <returns>Vega of up and knock out call</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.CallUpOut.Rho">
+            <summary>
+            Rho of up and knock out call
+            </summary>
+            <returns>Rho of up and knock out call</returns>
+        </member>
+        <member name="T:EDLib.Pricing.Warrant.PutDownOut">
+            <summary>
+            Down and knock out put
+            </summary>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.#ctor(System.String,System.String,System.String,System.String,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Constructor of down and knock out put
+            </summary>
+            <param name="WID">Warrant ID</param>
+            <param name="issuer">Issuer ID of the warrant</param>
+            <param name="traderID">Trader ID</param>
+            <param name="UID">Underlying ID</param>
+            <param name="X">Exercise price</param>
+            <param name="T">Time to maturity in year</param>
+            <param name="CR">Conversion ratio</param>
+            <param name="H">Barrier</param>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.Price">
+            <summary>
+            Price of down and knock out put
+            </summary>
+            <returns>Price of down and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.Delta">
+            <summary>
+            Delta of down and knock out put
+            </summary>
+            <returns>Delta of down and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.Gamma">
+            <summary>
+            Gamma of down and knock out put
+            </summary>
+            <returns>Gamma of down and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.Theta">
+            <summary>
+            Theta of down and knock out put
+            </summary>
+            <returns>Theta of down and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.Vega">
+            <summary>
+            Vega of down and knock out put
+            </summary>
+            <returns>Vega of down and knock out put</returns>
+        </member>
+        <member name="M:EDLib.Pricing.Warrant.PutDownOut.Rho">
+            <summary>
+            Rho of down and knock out put
+            </summary>
+            <returns>Rho of down and knock out put</returns>
+        </member>
+        <member name="T:EDLib.RVParameters">
+            <summary>
+            TIBCO Rendezvous parameters
+            </summary>
+        </member>
+        <member name="F:EDLib.RVParameters.service">
+            <summary>
+            RV service parameter
+            </summary>
+        </member>
+        <member name="F:EDLib.RVParameters.network">
+            <summary>
+            RV network parameter
+            </summary>
+        </member>
+        <member name="F:EDLib.RVParameters.daemon">
+            <summary>
+            RV daemon parameter
+            </summary>
+        </member>
+        <member name="F:EDLib.RVParameters.topic">
+            <summary>
+            RV topic parameter
+            </summary>
+        </member>
+        <member name="M:EDLib.RVParameters.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            TIBCO Rendezvous parameters
+            </summary>
+            <param name="service">service</param>
+            <param name="network">network</param>
+            <param name="daemon">daemon</param>
+            <param name="topic">topic</param>
+        </member>
+        <member name="T:EDLib.GlobalParameters">
+            <summary>
+            Global variables and parameters
+            </summary>
+        </member>
+        <member name="F:EDLib.GlobalParameters.WMMLog">
+            <summary>
+            WMM3 Log RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters("9082", ";239.16.1.6", "10.60.0.128:7500", "TW.ED.WMM3.CLIENT.LOG");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.PM">
+            <summary>
+            PM RV parameters
+            </summary>
+            <value><code>
+            new RVParameters("9013", "172.31.2;239.16.1.72", "10.60.0.128:7500", "TW.WMM3.PM.PositionReport.>");
+            </code></value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.PM_NoDaemon">
+            <summary>
+            PM RV parameters without daemon parameter
+            </summary>
+            <value><code>
+            new RVParameters("9013", "172.31.2;239.16.1.72", null, "TW.WMM3.PM.PositionReport.>");
+            </code></value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.Liquidity">
+            <summary>
+            Market liquidity RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", "10.60.0.128:7500", "MarketLiquidityInfo.*");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.Liquidity_NoDaemon">
+            <summary>
+            Market liquidity RV parameters without daemon parameter
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", null, "MarketLiquidityInfo.*");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.TWSE">
+            <summary>
+            TWSE quotes RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", "10.60.0.128:7500", "TWSE.MarketDataSnapshotFullRefresh");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.TWSE_NoDaemon">
+            <summary>
+            TWSE quotes RV parameters without daemon parameter
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", null, "TWSE.MarketDataSnapshotFullRefresh");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.TAIFEX">
+            <summary>
+            TAIFEX quotes RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", "10.60.0.128:7500", "TAIFEX.MarketDataSnapshotFullRefresh");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.TAIFEX_NoDaemon">
+            <summary>
+            TAIFEX quotes RV parameters without daemon parameter
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", null, "TAIFEX.MarketDataSnapshotFullRefresh");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.Slippage">
+            <summary>
+            Warrant execution report for calculating Slippage cost RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", "10.60.0.128:7500", "TW.WMM3.SlippageCost.HedgeInfo.PROD");
+            </code> 
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.Slippage_NoDaemon">
+            <summary>
+            Warrant execution report for calculating Slippage cost RV parameters without daemon parameter
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", null, "TW.WMM3.SlippageCost.HedgeInfo.PROD");
+            </code> 
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.ExecutionReport">
+            <summary>
+            Eecution reports RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", "10.60.0.129:7500", "TW.WMM3.FilledReportRelayService.ExecutionReport.PROD");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.ExecutionReport_NoDaemon">
+            <summary>
+            Eecution reports RV parameters without daemon parameter
+            </summary>
+            <value>
+            <code>
+            new RVParameters(null, "172.31.2;239.16.1.72", null, "TW.WMM3.FilledReportRelayService.ExecutionReport.PROD");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.FIXReport">
+            <summary>
+            WMM Fix report RV parameters
+            </summary>
+            <value>
+            <code>
+            new RVParameters("7113", ";239.16.1.13", "10.102.1.66:7500", "TW.ED.FIX44.EXECUTIONREPORT.*");
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.hedgeSqlConnStr">
+            <summary>
+            SQL server connection string of HEDGE
+            </summary>
+            <value>
+            <code>
+            "SERVER=10.101.10.5;DATABASE=HEDGE;UID=hedgeuser;PWD=hedgeuser"
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.wmm3SqlConnStr">
+            <summary>
+            SQL server connection string of WMM3
+            </summary>
+            <value>
+            <code>
+            "SERVER=10.101.10.5;DATABASE=WMM3;UID=hedgeuser;PWD=hedgeuser"
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.tsquoteSqlConnString">
+            <summary>
+            SQL server connection string of TsQuote
+            </summary>
+            <value>
+            <code>
+            "SERVER=10.60.0.37;DATABASE=TsQuote;UID=WarrantWeb;PWD=WarrantWeb"
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.warrantSysSqlConnString">
+            <summary>
+            SQL server connection string of WAFT (WTF is this name?)
+            </summary>
+            <value>
+            <code>
+            "SERVER=10.7.0.52;DATABASE=WAFT;UID=warpap;PWD=warpap"
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.warrantSysKeySqlConnString">
+            <summary>
+            SQL server connection string of EDAISYS
+            </summary>
+            <value>
+            <code>
+            "SERVER=10.7.0.52;DATABASE=EDAISYS;UID=warpap;PWD=warpap"
+            </code>
+            </value>
+        </member>
+        <member name="F:EDLib.GlobalParameters.edis20SqlConnString">
+            <summary>
+            SQL server connection string of EDIS
+            </summary>
+            <value>
+            <code>
+            "SERVER=10.19.1.20;DATABASE=EDIS;UID=WarrantWeb;PWD=WarrantWeb"
+            </code>
+            </value>
+        </member>
+        <member name="T:EDLib.NamespaceDoc">
+            <summary>
+            Miscellaneous classes
+            </summary>
+        </member>
+        <member name="T:EDLib.HeartbeatMonitor">
+            <summary>
+            Monitors heartbeat
+            </summary>
+            <example>
+            <code>
+            static HeartbeatMonitor hm = new HeartbeatMonitor(5, myAction);
+            
+            static void Main() {
+                
+                hm.Start();
+                ...
+            }
+            
+            static void myAction() {
+                //Do sth on timeout     
+                Console.WriteLine("myAction");
+                ...
+            }
+            
+            //This function shall be called on message receive with interval less than 5 seconds
+            static void OnMessageReceived(object listener, MessageReceivedEventArgs messageReceivedEventArgs) {
+                Message message = messageReceivedEventArgs.Message;
+                hm.Heartbeat();
+                //Do sth
+                ...
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.HeartbeatMonitor.#ctor(System.Int32,System.Action,System.Boolean)">
+            <summary>
+            Check the newest heartbeat time (updatedTime) every timeoutSecs.
+            If the newest heartbeat time is longer than timeoutSecs, noHeartbeatCallback will be called. 
+            </summary>
+            <param name="timeoutSecs">Timeout seconds</param>
+            <param name="noHeartbeatCallback">Function to be called when timeout</param>
+            <param name="hideConsole">Shall hide the console until timeout. Rehide it when not timeout.</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">timeoutSecs should > 0</exception>
+            <exception cref="T:System.ArgumentNullException">noHeartbeatCallback not specified</exception>
+        </member>
+        <member name="M:EDLib.HeartbeatMonitor.Start">
+            <summary>
+            Remember to call this to start the thread at some time after construction.
+            </summary>
+        </member>
+        <member name="M:EDLib.HeartbeatMonitor.Heartbeat">
+            <summary>
+            Send heartbeat signal to HeartbeatMonitor
+            </summary>
+        </member>
+        <member name="T:EDLib.MailService">
+            <summary>
+            Send e-mail via dzmail01.kgi.com
+            </summary>
+            <example>
+            <code>
+            MailService ms = new MailService();
+            ms.SendMail("kgiBulletin@kgi.com", "內網公告", new string[] { "judy.lu@kgi.com" }, null, new string[] { "allen.li@kgi.com", "andrea.chang@kgi.com" }, "Hello", "ㄋ好", false, null);
+            </code>
+            </example>
+        </member>
+        <member name="F:EDLib.MailService.smtpServer">
+            <summary>
+            smtp server
+            </summary>
+        </member>
+        <member name="F:EDLib.MailService.smtpPort">
+            <summary>
+            smtp server port default 25
+            </summary>
+        </member>
+        <member name="F:EDLib.MailService.mailAccount">
+            <summary>
+            Mail Account
+            </summary>
+        </member>
+        <member name="F:EDLib.MailService.mailPwd">
+            <summary>
+            Mail Password
+            </summary>
+        </member>
+        <member name="M:EDLib.MailService.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Initiate MailService 
+            </summary>
+            <param name="smtpServer">SMTP server, default: dzmail01.kgi.com</param>
+            <param name="smtpPort">SMTP port, default: 25</param>
+            <param name="mailAccount">mail account: not needed for KGI</param>
+            <param name="mailPwd">mail password: not needed for KGI</param>
+        </member>
+        <member name="M:EDLib.MailService.SendMail(System.String,System.String,System.String[],System.String[],System.String[],System.String,System.String,System.Boolean,System.String[],System.Net.Mail.MailPriority,System.Boolean)">
+            <summary>
+            Send mail
+            </summary>
+            <param name="mailFrom">Sender's E-mail Address</param>
+            <param name="senderName">Sender's name</param>
+            <param name="mailTos">Receivers' E-mail Addresses</param>
+            <param name="ccs">Carbon copy to E-mail Addresses</param>
+            <param name="bccs">Blind carbon copy to E-mail Addresses</param>
+            <param name="mailSub">Subject</param>
+            <param name="mailBody">Body of the mail</param>
+            <param name="isBodyHtml">Is body in html format</param>
+            <param name="filePaths">Paths to files to be attached.</param>
+            <param name="priority">Mail priority. High = 2, Low = 1, Normal = 0</param>
+            <param name="deleteFileAttachment">Delete the attached files or not</param>
+            <returns>Successful or not</returns>
+        </member>
+        <member name="T:EDLib.SleepToTarget">
+            <summary>
+            Make a thread to sleep to the target time, and execute the designated function.
+            </summary>
+            <example>
+            <code>
+            static void main() {
+                ...
+                SleepToTarget st = new SleepToTarget(new DateTime(2037, 5, 10, 09, 00, 00), myAction);
+                st.Start();
+                ...
+            }
+            
+            //This function will be called on 2037/5/10 09:00:00. (As long as the program is still alive)
+            static void myAction() {
+                Console.WriteLine("myAction");
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.SleepToTarget.#ctor(System.DateTime,System.Action)">
+            <summary>
+            Make a new thread to sleep to the targetTime and call myAction
+            </summary>
+            <param name="targetTime">Time to wakeup</param>
+            <param name="myAction">Function to be executed on wakeup</param>
+            <exception cref="T:System.ArgumentException">targetTime not initialized</exception>
+            <exception cref="T:System.ArgumentNullException">myAction not specified</exception>
+        </member>
+        <member name="M:EDLib.SleepToTarget.Start">
+            <summary>
+            Remember to call this to start the thread at some time after construction.
+            </summary>
+        </member>
+        <member name="T:EDLib.SlippageCost">
+            <summary>
+            Slippage Cost
+            </summary>
+        </member>
+        <member name="M:EDLib.SlippageCost.Calculate(System.String,System.Double,System.Int32,System.Double[],System.Int32[])">
+            <summary>
+            Calculate slippage costs
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="pricingBA">Pricing Bid/Ask</param>
+            <param name="hedgeLots">Number of lots to buy/sell (&lt;0 for sell)</param>
+            <param name="prices">Best bid1~5 (ask1~5) to sell (buy) lots to (from). Array must in decreasing (increasing) order.</param>
+            <param name="quantities">Quantities of the best bid1~5 (ask1~5)</param>
+            <returns>Profit or loss due to slippage</returns>
+        </member>
+        <member name="T:EDLib.SQL.NamespaceDoc">
+            <summary>
+            Some useful SQL helper functions
+            </summary>
+        </member>
+        <member name="T:EDLib.SQL.MSSQL">
+            <summary>
+            MSSQL query assistant
+            </summary>
+            <example>
+            <code> 
+            //ExecSqlQry example
+            DataTable Warrants = MSSQL.ExecSqlQry("select distinct TraderId,StkId,WId from Warrants where (MarketDate &lt;= CONVERT(varchar(10), GETDATE(), 111) and CONVERT(varchar(10), GETDATE(), 111) &lt;= LastTradeDate) and kgiwrt='自家'", GlobalParameters.WMM3);
+            Console.WriteLine("Warrants:" + Warrants.Rows.Count);
+            
+            //ExecSqlCmd example
+            SqlConnection conn = new SqlConnection("Data Source=server;Initial Catalog=DB;User ID=user;Password=password");               
+            conn.Open();
+            MSSQL.ExecSqlCmd("DELETE FROM Table1 WHERE TDate ='20170508' ", conn); 
+            conn.Close();
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.SQL.MSSQL.ExecSqlQry(System.Data.SqlClient.SqlCommand,System.String)">
+            <summary>
+            Execute MS SQL query
+            </summary>
+            <param name="cmd">SQL command</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="M:EDLib.SQL.MSSQL.ExecSqlQry(System.String,System.Data.SqlClient.SqlConnection,System.String)">
+            <summary>
+            Execute MS SQL query
+            </summary>
+            <param name="sql">SQL command string</param>
+            <param name="conn">SQL server connection</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="M:EDLib.SQL.MSSQL.ExecSqlQry(System.String,System.String,System.String)">
+            <summary>
+            Execute MS SQL query
+            </summary>
+            <param name="sql">SQL command string</param>
+            <param name="connstr">SQL server connection string</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="M:EDLib.SQL.MSSQL.ExecSqlCmd(System.String,System.Data.SqlClient.SqlConnection,System.Int32)">
+            <summary>
+            Execute MS SQL command
+            </summary>
+            <param name="sql">SQL command string</param>
+            <param name="conn">SQL server connection</param>
+            <param name="timeout">SQL server timeout seconds</param>
+            <returns>Number of data rows affected</returns>
+        </member>
+        <member name="M:EDLib.SQL.MSSQL.ExecSqlCmd(System.String,System.String,System.Int32)">
+            <summary>
+            Execute MS SQL command
+            </summary>
+            <param name="sql">SQL command string</param>
+            <param name="connstr">SQL server connection string</param> 
+            <param name="timeout">SQL server timeout seconds</param>
+            <returns>Number of data rows affected</returns>
+        </member>
+        <member name="T:EDLib.SQL.MySQL">
+            <summary>
+            MySQL query assistant
+            </summary>
+        </member>
+        <member name="M:EDLib.SQL.MySQL.ExecMySqlCmd(System.String,MySql.Data.MySqlClient.MySqlConnection,System.Int32)">
+            <summary>
+            Execute MySQL command
+            </summary>
+            <param name="sql">SQL command string</param>
+            <param name="conn">SQL server connection</param>
+            <param name="timeout">SQL server timeout seconds</param>
+            <returns>Number of data rows affected</returns>
+        </member>
+        <member name="M:EDLib.SQL.MySQL.ExecMySqlCmd(System.String,System.String,System.Int32)">
+            <summary>
+            Execute MySQL command
+            </summary>
+            <param name="sql">SQL command string</param>
+            <param name="connstr">SQL server connection string</param> 
+            <param name="timeout">SQL server timeout seconds</param>
+            <returns>Number of data rows affected</returns>
+        </member>
+        <member name="M:EDLib.SQL.MySQL.ExecMySqlQry(MySql.Data.MySqlClient.MySqlCommand,System.String)">
+            <summary>
+            Execute MySQL query
+            </summary>
+            <param name="cmd">MySQL command</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="M:EDLib.SQL.MySQL.ExecMySqlQry(System.String,MySql.Data.MySqlClient.MySqlConnection,System.String)">
+            <summary>
+            Execute MySQL query
+            </summary>
+            <param name="sql">MySQL command string</param>
+            <param name="conn">MySQL server connection</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="M:EDLib.SQL.MySQL.ExecMySqlQry(System.String,System.String,System.String)">
+            <summary>
+            Execute MySQL query
+            </summary>
+            <param name="sql">MySQL command string</param>
+            <param name="connstr">MySQL server connection string</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="T:EDLib.SQL.CMoney">
+            <summary>
+            CMoney query assistant
+            </summary>
+            <example>
+            <code>
+            //ExecCmoneyQry example
+            string SQLStr = "SELECT 代號 ,isnull(權證成交量,0),isnull([權證成交金額(千)],0) from 權證評估表 where 日期='20170511'";
+            DataTable WarrantMM = CMoney.ExecCMoneyQry(SQLStr, "WarrantMM");
+            Console.WriteLine("CMoneyCount:" + WarrantMM.Rows.Count);
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.SQL.CMoney.ExecCMoneyQry(System.String,System.String)">
+            <summary>
+            Execute CMoney query
+            </summary>
+            <param name="sql">CMoney SQL command string</param>
+            <param name="dataTableName">Name of DataTable to be returned</param>
+            <returns>A DataTable containing queried data</returns>
+        </member>
+        <member name="T:EDLib.TIBCORV.NamespaceDoc">
+            <summary>
+            TIBCO Rendezvous services
+            </summary>
+        </member>
+        <member name="T:EDLib.TIBCORV.ListenerFunc">
+            <summary>
+            Function pointer of listener callback function
+            </summary>
+            <param name="listener">Caller of callback function</param>
+            <param name="messageReceivedEventArgs">Message received by callback function</param>
+        </member>
+        <member name="T:EDLib.TIBCORV.TIBCORVListener">
+            <summary>
+            Listen to TIBCO Rendezvous services. This class can let you specify multiple net transports and listener callbacks.
+            </summary>
+            <example>
+            <code>
+            private static readonly RVParameters[] rvParameters = new RVParameters[] { GlobalParameters.WMMLog, new RVParameters(null, "172.31.2;239.16.1.72", "10.60.0.129:7500", "TW.WMM3.FilledReportRelayService.ExecutionReport.PROD")};
+            static void main() {     
+                TIBCORVListener listener = new TIBCORVListener(rvParameters);
+                ListenerFunc[] callbacks = new ListenerFunc[rvParameters.Length];
+                callbacks[0] = new ListenerFunc(OnMessageReceived);
+                callbacks[1] = new ListenerFunc(OnMessageReceived2);    
+                listener.Listen(callbacks);
+            }
+             
+            static void OnMessageReceived(object listener, MessageReceivedEventArgs messageReceivedEventArgs) {
+                Message message = messageReceivedEventArgs.Message;    
+                //Do sth...
+                Console.WriteLine(message);
+            }
+            
+            static void OnMessageReceived2(object listener, MessageReceivedEventArgs messageReceivedEventArgs) {
+                Message message = messageReceivedEventArgs.Message;   
+                //Do sth...
+                Console.WriteLine(message);
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVListener.#ctor(System.String[],System.String[],System.String[],System.String[])">
+            <summary>
+            Initiate listener with parameters
+            </summary>
+            <param name="services">String array of service parameters</param>
+            <param name="networks">String array of network parameters</param>
+            <param name="daemons">String array of daemon parameters</param>
+            <param name="topics">String array of topic parameters</param>
+            <exception cref="T:System.ArgumentException">Parameter arrays must have same length</exception>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVListener.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initiate listener with parameters
+            </summary>
+            <param name="service">String of service parameter</param>
+            <param name="network">String of network parameter</param>
+            <param name="daemon">String of daemon parameter</param>
+            <param name="topic">String of topic parameter</param>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVListener.#ctor(EDLib.RVParameters[])">
+            <summary>
+            Initiate listener with RVParameters classes
+            </summary>
+            <param name="rvParameters">RVParameters classes</param>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVListener.#ctor(EDLib.RVParameters)">
+            <summary>
+            Initiate listener with RVParameters class
+            </summary>
+            <param name="rvParameter">RVParameters class</param>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVListener.Listen(EDLib.TIBCORV.ListenerFunc[])">
+            <summary>
+            Start listen to topics with callback functions.
+            </summary>        
+            <param name="callBack">Callback functions to be called on reveiviing message.</param>
+            <exception cref="T:System.ArgumentException">Parameter arrays must have length N equals to lengths of parameters of constructor</exception>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVListener.Listen(EDLib.TIBCORV.ListenerFunc)">
+            <summary>
+            Start listen to topic with callback function.
+            </summary>
+            <param name="callBack">Callback function to be called on reveiviing message.</param>
+            /// <exception cref="T:System.ArgumentException">Parameter arrays must have length N equals to lengths of parameters of constructor</exception>
+        </member>
+        <member name="T:EDLib.TIBCORV.TIBCORVSender">
+            <summary>
+            Send via TIBCO Rendezvous service
+            </summary>
+            <example>
+            <code>
+            private static readonly TIBCORVSender Sender = new TIBCORVSender("9082", ";239.16.1.6", "10.60.0.128:7500");
+            static void main() {
+                 Message SendMsg = new Message();
+                 SendMsg.AddField("MSGTYPE", "SendExample");
+                 SendMsg.AddField("Time", DateTime.Now);
+                 Sender.Send(SendMsg, "TIBCO.SendExample"); 
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVSender.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initiate sender with parameters
+            </summary>
+            <param name="service">service parameter</param>
+            <param name="network">network parameter</param>
+            <param name="daemon">daemon parameter</param>
+        </member>
+        <member name="M:EDLib.TIBCORV.TIBCORVSender.Send(TIBCO.Rendezvous.Message,System.String)">
+            <summary>
+            Send message
+            </summary>
+            <param name="message">Message to be send.</param>
+            <param name="topic">Send message through topic.</param>
+        </member>
+        <member name="T:EDLib.Tick">
+            <summary>
+            Price tick related function of Taiwan stock/future market
+            </summary>
+            <example>
+            <code>
+            double price = 498;
+            for (int i = 0; i &lt; 10; i++) {
+                price += Tick.UpTickSize("2330", price);     
+                Console.Write(price + " ");
+            }
+            Console.WriteLine();
+            for (int i = 0; i &lt; 10; i++) {
+                price += Tick.DownTickSize("2330", price);
+                Console.Write(price + " ");
+            }
+            double[] bids = Tick.GetAsks("2330", 9.19);
+            for (int i = 0; i &lt; 6; i++)
+                Console.Write(bids[i] + " ");
+            Console.WriteLine(Tick.GetTickNum("2330", 8.8, 8.76));
+            Console.WriteLine(Tick.GetTickNum("2330", 9.24, 9.23999999));
+            Console.WriteLine(Tick.ShiftTicks("2330", 99, 25));
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.Tick.UpTickSize(System.String,System.Double)">
+            <summary>
+            Tick size of one tick upward.
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="price">Current price</param>
+            <returns>Tick size of uptick</returns>
+        </member>
+        <member name="M:EDLib.Tick.DownTickSize(System.String,System.Double)">
+            <summary>
+            Tick size of one tick downward.
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="price">Current price</param>
+            <returns>Tick size of downtick</returns>
+        </member>
+        <member name="M:EDLib.Tick.GetBids(System.String,System.Double)">
+            <summary>
+            Get best 5 + 1 bid prices given bid1
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="bid1">Bid1</param>
+            <returns>An array with 6 bid prices</returns>
+        </member>
+        <member name="M:EDLib.Tick.GetAsks(System.String,System.Double)">
+            <summary>
+            Get best 5 + 1 ask prices given ask1
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="ask1">Ask1</param>
+            <returns>An array with 6 ask prices</returns>
+        </member>
+        <member name="M:EDLib.Tick.ShiftTicks(System.String,System.Double,System.Int32)">
+            <summary>
+            Shift price N ticks up. (N &lt; 0 for down tick) 
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="price">Current price</param>
+            <param name="N">N ticks</param>
+            <returns>Shifted price</returns>
+        </member>
+        <member name="M:EDLib.Tick.GetTickNum(System.String,System.Double,System.Double)">
+            <summary>
+            Get number of ticks between price1 and price2
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <param name="price1">price1</param>
+            <param name="price2">price2</param>
+            <returns>Number of ticks</returns>
+        </member>
+        <member name="T:EDLib.TradeDate">
+            <summary>
+            Check for TradeDate
+            </summary>
+            <example>
+            <code>
+            // Print whether last nine calendar days are trade day (including today)
+            for (int i = 0; i &lt; 10; i++)
+                Console.WriteLine(TradeDate.IsTradeDay(DateTime.Today.AddDays(-i)));
+            // Print last nine trade dates
+            for (int i = 1; i &lt; 10; i++)
+                Console.WriteLine(TradeDate.LastNTradeDate(i));
+            //Print next ten trade dates
+            DateTime[] dt = TradeDate.NextNTradeDates(10);
+            for (int i = 0; i &lt; 10; i++)
+                Console.WriteLine(dt[i]);
+            </code>
+            </example>
+        </member>
+        <member name="M:EDLib.TradeDate.LastNTradeDate(System.Int32,System.String)">
+            <summary>
+            Get last Nth trade day
+            </summary>
+            <param name="N">N trade days, N has to be > 0</param>
+            <param name="region">The currency region: AUD CHF EUR GBP HKD JPY KRW KYD PHP SEK SGD TWD USD</param>
+            <returns>DateTime of that day</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">N has to be > 0</exception>
+        </member>
+        <member name="M:EDLib.TradeDate.NextNTradeDate(System.Int32,System.String)">
+            <summary>
+            Get next Nth trade day
+            </summary>
+            <param name="N">N trade days, N has to be > 0</param>
+            <param name="region">The currency region: AUD CHF EUR GBP HKD JPY KRW KYD PHP SEK SGD TWD USD</param>
+            <returns>DateTime of that day</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">N has to be > 0</exception>
+        </member>
+        <member name="M:EDLib.TradeDate.NextNTradeDates(System.Int32,System.String)">
+            <summary>
+            Get next N trade days
+            </summary>
+            <param name="N">N trade days, N has to be > 0</param>
+            <param name="region">The currency region: AUD CHF EUR GBP HKD JPY KRW KYD PHP SEK SGD TWD USD</param>
+            <returns>DateTimes of those days</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">N has to be > 0</exception>
+        </member>
+        <member name="M:EDLib.TradeDate.LastNTradeDates(System.Int32,System.String)">
+            <summary>
+            Get last N trade days
+            </summary>
+            <param name="N">N trade days, N has to be > 0</param>
+            <param name="region">The currency region: AUD CHF EUR GBP HKD JPY KRW KYD PHP SEK SGD TWD USD</param>
+            <returns>DateTimes of those days</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">N has to be > 0</exception>
+        </member>
+        <member name="M:EDLib.TradeDate.IsTradeDay(System.DateTime,System.String)">
+            <summary>
+            Is the day trade day
+            </summary>
+            <param name="day">The day</param>
+            <param name="region">The currency region: AUD CHF EUR GBP HKD JPY KRW KYD PHP SEK SGD TWD USD</param>
+            <returns>True of false</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException">day has to be >= 2008/2/2</exception>
+        </member>
+        <member name="M:EDLib.TradeDate.IsTodayTradeDay">
+            <summary>
+            Is today trade day
+            </summary>
+            <returns>True or false</returns>
+        </member>
+        <member name="T:EDLib.FlagsHelper">
+            <summary>
+            Manipulate bitmask
+            </summary>
+        </member>
+        <member name="M:EDLib.FlagsHelper.IsSet``1(``0,``0)">
+            <summary>
+            Is flag set in flags
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="flags">Flags</param>
+            <param name="flag">Flag</param>
+            <returns>Is set or not</returns>
+        </member>
+        <member name="M:EDLib.FlagsHelper.Set``1(``0@,``0)">
+            <summary>
+            Set the flag in flags
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="flags">Flags</param>
+            <param name="flag">Flag</param>
+        </member>
+        <member name="M:EDLib.FlagsHelper.Unset``1(``0@,``0)">
+            <summary>
+            Unset the flag in flags
+            </summary>
+            <typeparam name="T">Type</typeparam>
+            <param name="flags">Flags</param>
+            <param name="flag">Flag</param>
+        </member>
+        <member name="T:EDLib.PermutationsAndCombinations">
+            <summary>
+            Permutations and Combinations
+            </summary>
+        </member>
+        <member name="M:EDLib.PermutationsAndCombinations.nCr(System.Int32,System.Int32)">
+            <summary>
+            Combination
+            </summary>
+            <param name="n">n items to choose from</param>
+            <param name="r">Choose r items</param>
+            <returns>Number of combinations</returns>
+        </member>
+        <member name="M:EDLib.PermutationsAndCombinations.nPr(System.Int32,System.Int32)">
+            <summary>
+            Permutation
+            </summary>
+            <param name="n">n items to choose from</param>
+            <param name="r">Permute r items</param>
+            <returns>Number of permutations</returns>
+        </member>
+        <member name="T:EDLib.Utility">
+            <summary>
+            Miscellaneous utility functions
+            </summary>   
+        </member>
+        <member name="T:EDLib.Utility.CommodityType">
+            <summary>
+            Commodity type
+            </summary>
+        </member>
+        <member name="F:EDLib.Utility.CommodityType.Stock">
+            <summary>Stock</summary>
+        </member>
+        <member name="F:EDLib.Utility.CommodityType.IndexFuture">
+            <summary>Index Future</summary>
+        </member>
+        <member name="F:EDLib.Utility.CommodityType.Warrant">
+            <summary>Warrant</summary>
+        </member>
+        <member name="F:EDLib.Utility.CommodityType.ETF">
+            <summary>ETF</summary>
+        </member>
+        <member name="F:EDLib.Utility.CommodityType.Others">
+            <summary>Others</summary>
+        </member>
+        <member name="M:EDLib.Utility.GetCommodityType(System.String)">
+            <summary>
+            Get the commodity type of ID
+            </summary>
+            <param name="ID">Commodity ID</param>
+            <returns>CommodityType</returns>
+        </member>
+        <member name="M:EDLib.Utility.GetHtml(System.String,System.Text.Encoding)">
+            <summary>
+            Get response string from the url
+            </summary>
+            <param name="url">The URL</param>
+            <param name="encode">Encoding</param>
+            <returns>Response from the webpage request</returns>
+        </member>
+        <member name="M:EDLib.Utility.GetLocalIPAddress">
+            <summary>
+            Get local IP address that begins with 10.*
+            </summary>
+            <returns>IP address</returns>
+            <exception cref="T:System.Exception">Local IP Address Not Found!</exception>
+        </member>
+        <member name="M:EDLib.Utility.SaveToCSV(System.Data.DataTable,System.String,System.Boolean)">
+            <summary>
+            Save DataTable into .csv file
+            </summary>
+            <param name="dt">DataTable to be saved</param>
+            <param name="filePath">File path</param>
+            <param name="containHeader">Should the file contains header row or not</param>
+        </member>
+        <member name="M:EDLib.Utility.SaveToCSV(System.Data.DataTable,System.String,System.Text.Encoding,System.Boolean)">
+            <summary>
+            Save DataTable into .csv file
+            </summary>
+            <param name="dt">DataTable to be saved</param>
+            <param name="filePath">File path</param>
+            <param name="encoding">Encoding of file</param>
+            <param name="containHeader">Should the file contains header row or not</param>
+        </member>
+        <member name="M:EDLib.Utility.IsDirectoryEmpty(System.String)">
+            <summary>
+            Is the directory empty
+            </summary>
+            <param name="path">Path of directory</param>
+            <returns>Is the directory empty</returns>
+        </member>
+        <member name="M:EDLib.Utility.GetFutureContractID(System.Int32)">
+            <summary>
+            Get ID of nearby futures contract
+            </summary>
+            <param name="nDays">Number of days to shift</param>
+            <returns>A letter and a number that represent the expirary month and year.(e.g. H7 for Aug. 2017)</returns>
+        </member>
+        <member name="M:EDLib.Utility.GetFutureContractID(System.DateTime)">
+            <summary>
+            Get ID of nearby futures contract of the date
+            </summary>
+            <param name = "today" >The date</param>
+            <returns>A letter and a number that represent the expirary month and year.(e.g. H7 for Aug. 2017)</returns>
+        </member>
+        <member name="M:EDLib.Utility.WakeUp(System.String,System.Net.IPAddress)">
+            <summary>
+            Send Wake On Lan packet.
+            </summary>
+            <param name="MAC_ADDRESS">MAC Address</param>
+            <param name="IPBCast">Broadcast IP address, usually 255.255.255.255 will work</param>
+        </member>
+        <member name="M:EDLib.Utility.DifferentCombinations``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Returns all combinations of an enumerable item
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="elements"></param>
+            <param name="k"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

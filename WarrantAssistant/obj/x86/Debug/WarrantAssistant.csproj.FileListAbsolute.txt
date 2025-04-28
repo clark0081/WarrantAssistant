@@ -1,0 +1,80 @@
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\WarrantAssistant.exe
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\WarrantAssistant.pdb
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.Properties.Resources.resources
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.csproj.GenerateResource.Cache
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.exe
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.pdb
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.MainForm.resources
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.csprojResolveAssemblyReference.cache
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\Interop.ADODB.dll
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.csproj.ResolveComReference.cache
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmUnderlyingSummary.resources
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\DeriLib.dll
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\AxInterop.IPUSHXLib.dll
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\AxInterop.XQRECOVERLib.dll
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\AxInterop.XQUOTELib.dll
+c:\users\0009259\documents\visual studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueCheck.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueCheckPut.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmWarrant.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\bin\Debug\WarrantAssistant.exe.config
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssueInput.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.exe.licenses
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssuable.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.Frm71.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmApply.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssue.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmApplyTotalList.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueTotal.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssueTotal.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmLog.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmLogIn.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueByCurrent.resources
+C:\Users\0009259\Documents\Visual Studio 2010\Projects\WarrantAssistant\WarrantAssistant\obj\x86\Debug\Interop.CMADODB5.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\WarrantAssistant.exe.config
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.exe
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.pdb
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.csprojResolveAssemblyReference.cache
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.Frm71.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmApply.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmApplyTotalList.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueByCurrent.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueCheck.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueCheckPut.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmIssueTotal.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmLog.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmLogIn.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssuable.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssue.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssueInput.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmReIssueTotal.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmWarrant.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.MainForm.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmUnderlyingSummary.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.Properties.Resources.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.csproj.GenerateResource.Cache
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\WarrantAssistant.exe
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\WarrantAssistant.pdb
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\AxInterop.IPUSHXLib.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\AxInterop.XQRECOVERLib.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\AxInterop.XQUOTELib.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.exe.licenses
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\HtmlAgilityPack.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\HtmlAgilityPack.pdb
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\HtmlAgilityPack.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\DeriLib.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\EDLib.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\MySql.Data.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\EDLib.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\MySql.Data.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Shared.v16.2.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.Misc.v16.2.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.UltraWinDataSource.v16.2.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.UltraWinGrid.v16.2.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.v16.2.dll
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Shared.v16.2.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.Misc.v16.2.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.UltraWinDataSource.v16.2.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.UltraWinGrid.v16.2.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\bin\Debug\Infragistics4.Win.v16.2.xml
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.FrmRename.resources
+R:\WMM\0009695\Schedule\10.19.1.45\WarrantAssistant\WarrantAssistant\WarrantAssistant\obj\x86\Debug\WarrantAssistant.csproj.CoreCompileInputs.cache

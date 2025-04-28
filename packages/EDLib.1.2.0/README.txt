@@ -1,0 +1,1 @@
+Please see .\packages\EDLib.1.1.9\HelpFile.chm
